@@ -1047,7 +1047,7 @@ footer .copyright {
         line-height: 1;
         white-space: nowrap;
         margin-left: 20px;
-        margin-top: 40px;
+        margin-top: 35px;
         color: #088178;
         position: absolute
              
@@ -1056,7 +1056,7 @@ footer .copyright {
 
    #hero  h2 {
         font-size: 20px;
-        margin-bottom: 50px;
+        margin-bottom: 45px;
         margin-left: 20px;
         white-space: nowrap;
         position: absolute
@@ -1084,7 +1084,7 @@ footer .copyright {
         cursor: pointer;
         font-weight: 600;
         font-size: 15px;
-        margin-top: 200px;
+        margin-top: 170px;
     }
 
 
