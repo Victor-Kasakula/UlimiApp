@@ -205,19 +205,29 @@ body {
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: top 24% right 0;
-    padding: 0 70px;
+    background-position: top 22% right 0;
+    padding: 0 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     animation: myBackground 25s infinite;
     filter: contrast(1.2);
-   
-    
-    
 
 }
+#hero h1  a,
+h2 a {
+    text-decoration: none;
+}
+#hero h1 a {
+    color: #088178;
+    cursor: pointer;
+}
+#hero h2 a {
+    color: #000;
+    cursor: pointer;
+} 
+
 
 
 
@@ -1026,22 +1036,42 @@ footer .copyright {
     .section-p1 {
         padding: 20px;
     }
+    
 
     #header {
-        padding: 10px 30px;
+        padding: 2px 20px;
     }
 
-    h1 {
-        font-size: 38px;
+    #hero h1 {
+        font-size: 18px;
+        line-height: 1;
+        white-space: nowrap;
+        margin-left: 20px;
+        margin-top: 40px;
+        color: #088178;
+        position: absolute
+             
+    }
+ 
+
+   #hero  h2 {
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        white-space: nowrap;
+        position: absolute
+        
     }
 
-    h2 {
-        font-size: 32px;
+   #hero h4 {
+        overflow: hidden;
+        display: none;
     }
 
-    #her0 {
+    #hero {
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 40%;
+     ;
     }
     
     #hero button {
@@ -1049,20 +1079,14 @@ footer .copyright {
         background-color: transparent;
         color: #088178;
         border: 0;
-        padding: 14px 80px 14px 65px;
+        padding: 14px 70px 14px 65px;
         background-repeat: no-repeat;
         cursor: pointer;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 15px;
-        margin-bottom: 100px;
+        margin-top: 200px;
     }
-    h2 {
-        font-size: 30px;
-    }
-    #hero h1 {
-        padding-bottom: 15px;
-        color: #088178;
-    }
+
 
     #feature {
         justify-content: space-between;
