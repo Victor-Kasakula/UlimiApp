@@ -7,15 +7,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
         <title>ulimi-online</title>
+        <link rel="icon" type="image/x-icon" href="ulimi-online.png">
 
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <section id="header"> 
-            <a href="index.html"><img src="ulimi-online.png" alt="logo-1" class="logo"></a>
+           <div class="logo-container">
+            <a href="index.html"><img src="ulimi-online.png" alt="logo-1" class="logo-image"></a>
+           </div> 
             
+           <!-- <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit" class="search-button"><i class="fa fa-search search-icon"></i></button>
+                </form>
+              </div> -->
             <div>
+                
               <ul id="navbar">
                 <li><a class="active" href="index.html"><i class="fas fa-home homeSymbol"></i>
                  <li><a class="tooltip" href="market.html">Msika-wa-alimi<span class="tooltiptext">farmers-market</span></a></li> 
@@ -29,6 +39,7 @@
                 
               </ul>
             </div>
+ 
            <div id="mobile">
                 <a href="cart.html"><i class="far fa-shopping-bag" aria-hidden="true"></i></a>
                 <i id="bar" class="fas fa-outdent"></i>
