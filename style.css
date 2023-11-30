@@ -47,10 +47,6 @@ p {
     padding: 40px 80px;
 }
 
-.section-p1 {
-    padding: 40px 80px;
-}
-
 .section-m1 {
     margin: 40px 0;
 }
@@ -92,10 +88,24 @@ body {
 }
 
 /* Header Start */
-.logo {
-    max-width: 100%x;
-    min-width: 120px;
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    right: 70px;
     height: 100px;
+    
+    
+}
+.logo-image {
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+    position: relative;
+    right: 40px;
+ 
+ 
+   
 }
 .tooltip {
     position: relative;
@@ -147,11 +157,49 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+ 
 
 
 
 }
 
+#header .search-container input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    width: 70%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+#header .search-container {
+    top: 45px;
+    left: 200px;
+    position: absolute;
+    width:  38%;
+    height: 90px;
+   
+}
+#header .search-container .search-icon {
+
+    top: 2px;
+    position: relative;
+    right: 4px;
+}
+#header .search-button {
+    width: 70px;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    position: relative;
+    right: 5px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  
+}
 #navbar {
     display: flex;
     align-items: center;
@@ -652,7 +700,7 @@ footer a {
     text-decoration: none;
     color: #222;
     margin-bottom: 10px;
-    ;
+    
 }
 
 footer .follow {
@@ -835,6 +883,7 @@ footer .copyright {
 
 }
 
+
 #blog .blog-details {
     width: 50%;
     box-shadow: 10px 10px 54px rgba(8, 129, 120, 0.1);
@@ -851,12 +900,13 @@ footer .copyright {
 }
 
 #blog .blog-details a {
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 11px;
-    color: #000;
+    color: #088178;
     font-weight: 700;
     position: relative;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #blog .blog-details a::after {
@@ -871,7 +921,7 @@ footer .copyright {
 }
 
 #blog .blog-details a:hover {
-    color: #088178;
+    color: #000;
 }
 
 #blog .blog-details a:hover::after {
@@ -886,7 +936,32 @@ footer .copyright {
     font-weight: 700;
     color: #669a97;
     z-index: -9;
+    
 }
+#blog p {
+    font-weight: 600;
+    color: #000;
+}
+#blog .blog-box h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+.blog-smallImage-container {
+    display: flex;
+    border: 1px solid #088178;
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 4px;
+  
+}
+#blog .blog-smallImage-container img {
+   
+    width: 130px;
+    height: 115px;
+    margin: 6px 25px  5px;
+    border-radius: 2px;
+}
+
 
 /*About page */
 
@@ -1025,13 +1100,19 @@ footer .copyright {
 }
 
 @media (max-width: 477px) {
-    .logo {
-        min-width: 120px;
-        height: 100px;
-        padding-left: 50px;
+    .logo-image {
+        width: 150px;
+        height: 80px;
+        padding: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .logo-container {
         display: flex;
-        margin-left: -125px;
-        margin-bottom: 20px;
+        justify-content: flex-start;
+        position: relative;
+        right: 20px;
+        height: 100px;
     }
     .section-p1 {
         padding: 20px;
@@ -1164,6 +1245,30 @@ footer .copyright {
         margin-right: 0px;
         margin-bottom: 30px;
     }
+    #blog p {
+        font-weight: 400;
+        color: #000;
+    }
+    #blog .blog-details a {
+        text-decoration: underline;
+        font-size: 11px;
+        color: #088178;
+        font-weight: 700;
+        position: relative;
+        transition: 0.3s;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    #blog .blog-details a::after {
+        content: "";
+        width: 30px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 4px;
+        margin-left: 5px;
+       
+    }
 
     #blog .blog-box h1 {
         position: absolute;
@@ -1174,6 +1279,29 @@ footer .copyright {
         color: #3f978e;
         z-index: -9;
     }
+    #blog .blog-box h2 {
+    font-size: 18px;
+    line-height: normal;
+    background-color: #088178;
+    text-align: center;
+}
+.blog-smallImage-container {
+    display: flex;
+    border: 1px solid #088178;
+    height: 130px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+#blog .blog-box img {
+    width: 90%;
+    height: 120px;
+    margin: 4px 20px 5px 5px;
+    display: flex;
+   
+    
+    
+}
 
     #blog .blog-details {
         width: 100%;
