@@ -1152,7 +1152,23 @@ footer .copyright {
     #hero {
         padding: 0 20px;
         background-position: 40%;
-     ;
+     
+    }
+    #hero h1 a {
+        color: #088178;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+    }
+    .hero-paragraph {
+        color: #222;
+        font-weight: 700;
+        font-size: 12px;
+        position: relative;
+        left: 30px;
+        top: 250px;
+        white-space: nowrap;
+        text-align: center;
     }
     
     #hero button {
@@ -1165,7 +1181,9 @@ footer .copyright {
         cursor: pointer;
         font-weight: 600;
         font-size: 15px;
-        margin-top: 170px;
+        position: relative;
+        top: 240px;
+        left: 70px;
     }
 
 
@@ -1280,10 +1298,12 @@ footer .copyright {
         z-index: -9;
     }
     #blog .blog-box h2 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: normal;
-    background-color: #088178;
+    background-color: #cdebbc;
     text-align: center;
+    padding: 10px;
+    border-radius: 4px;
 }
 .blog-smallImage-container {
     display: flex;
@@ -1310,6 +1330,11 @@ footer .copyright {
         height: 350px;
         border: 1px solid #cce7d0;
         border-radius: 12px;
+    }
+    /* styles for the how to page */
+    #how-to .how-to-image-container {
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 }
